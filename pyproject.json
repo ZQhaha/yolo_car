@@ -1,0 +1,83 @@
+{
+    "app_name": "YOLO_Car",
+    "app_version": "0.1.0",
+    "description": "yolo车牌检测与识别",
+    "authors": ["王歆宇","张弛","赵全"],
+    "build": {
+"enable_console": false,
+        "proj_dir": "./yolo_new_car",
+        "dist_dir": "./{app_name_snake}_{app_version}",
+        "launchers": {
+            "{app_name}": {
+                "file": "./yolo_new_car/main.py",
+                "icon": "./yolo_new_car/assets/icon.ico",
+                "function": "main",
+                "args": [],
+                "kwargs": {}
+            }
+        },
+        "readme": "",
+        "attachments": {
+        },
+        "attachments_exclusions": [],
+        "attachments_exist_scheme": "overwrite",
+        "module_paths": [],
+        "module_paths_scheme": "translate",
+        "python_version": "3.8",
+        "venv": {
+            "enabled": false,
+            "mode": "pip",
+            "options": {
+                "depsland": {
+                    "venv_name": "{app_name_snake}_venv",
+                    "venv_id": "",
+                    "requirements": [],
+                    "offline": false,
+                    "local": ""
+                },
+                "source_venv": {
+                    "path": "",
+                    "copy_venv": true
+                },
+                "pip": {
+                    "requirements": ["numpy","tk","pillow"],
+                    "pypi_url": "https://mirrors.ustc.edu.cn/pypi/web/simple",
+                    "offline": false,
+                    "local": ""
+                },
+                "embed_python": {
+                    "path": ""
+                }
+            }
+        },
+        "compiler": {
+            "enabled": true,
+            "mode": "pyportable_crypto",
+            "options": {
+                "cythonize": {
+                    "c_compiler": "msvc",
+                    "python_path": "auto_detect"
+                },
+                "pyarmor": {
+                    "license": "trial",
+                    "obfuscate_level": 0
+                },
+                "pyc": {
+                    "optimize_level": 0
+                },
+                "pyportable_crypto": {
+                    "key": "{random}"
+                },
+                "zipapp": {
+                    "password": ""
+                }
+            }
+        },
+        "experimental_features": {
+            "add_pywin32_support": false,
+            "platform": "system_default"
+        },
+        "enable_console": false
+    },
+    "note": ""
+}
